@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(43, 43, 43);
+    justify-content: center;
+    display: flex;
+
+    header{
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.226);
+        color: aliceblue;
+        
+        nav{
+            padding: 12px;
+            align-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+    }
+
+    .content{
+        font-size: 20px;
+        margin-top: 10rem;
+        color: aliceblue;
+        background-color: rgb(59, 59, 59);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.226);
+
+        border-radius: 5px;
+        padding: 2rem;
+        width: 60rem;
+        ul{
+            h1{color: rgb(24, 56, 240);}
+
+        }
+    }
+}
