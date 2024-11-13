@@ -21,15 +21,16 @@ body{
     }
 
     .content{
+        font-family: "Courier New", Courier, monospace;
         font-size: 20px;
         margin-top: 10rem;
         color: aliceblue;
         background-color: rgb(59, 59, 59);
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.226);
-
-        border-radius: 5px;
+        border: 11px solid #0011a821;
+        border-radius: 30px;
         padding: 2rem;
-        width: 60rem;
+        width: 65rem;
         ul{
             h1{color: rgb(24, 56, 240);}
 
@@ -37,11 +38,42 @@ body{
         transition: 0.5s;
         cursor: pointer;
     }
+
     .content:hover{
-        scale: 0.92;
+        scale: 0.95;
+        transform: rotate(2deg);
+    }
+    @keyframes notificacao2 {
+        0%{
+            background-color: rgba(0, 153, 8, 0.664);
+        }
+        50%{
+            background-color: rgb(0, 117, 6);
+        }
+        100%{
+            background-color: rgba(0, 153, 8, 0.664);
+        }
     }
 
-
+    .div_notificacao {
+        padding: 1rem;
+        background-color: #3e63d04f;  
+        color: rgb(235, 235, 235);
+        position: fixed;
+        border-radius: 5px;
+        right: 20px;
+        bottom: 20px;
+        border: 2px solid #0011a8;
+        animation-name: notificacao2;
+        animation: notificacao2 2s;
+        cursor: pointer;
+    }
+    
+    .div_notificacao:hover {
+        background-color: #002aa8c7; 
+        transition: background-color 0.5s ease-in-out;
+    }
+    
     footer{
         bottom: 0;
         left: 0;
